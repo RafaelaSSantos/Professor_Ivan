@@ -22,7 +22,7 @@ else console.log(`${alimento} Não existe no array`)
 function includes(array, elemento){return}
 const alimento = 'macarronada'
 if(includes(comidas, 'macarronada')) console.log(`${alimento} existe no array`)
-else console.log(`${alimento} Não existe no array`)
+else console.log(`${alimento} Não existe no array`)*/
 
 // 3. Construa uma função que dado um elemento, retorne sua posição. Retorna -1 caso o elemento não exista no array.
 let achar = comidas.indexOf('pizza')
@@ -63,7 +63,7 @@ const quadrado = (x) => x * x;
 const cubo = (x) => x * x * x;
 
 console.log(every(numeros, quadrado));
-console.log(every(numeros, (num) => num * num));*/
+console.log(every(numeros, (num) => num * num));
 
 // 9. Crie um função que receba um array e uma função de entrada e retorne apenas os elementos para os quais essa função for verdade
 let cha = ['cha preto','cha camomila','cha erva cidreira','cha hibisco'];
