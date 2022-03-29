@@ -15,7 +15,7 @@ import { Component } from "@angular/core";
 export class SegundoComponent{
   public user: {id:number; nome:string} = {
     id: 3045,
-    nome:' Rafa'
+    nome:'Rafa'
   };
   public preco: number = 10;
 
