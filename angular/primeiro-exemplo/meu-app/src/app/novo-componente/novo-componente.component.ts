@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
 
   <input type="text" [disabled]="isDisable"/>
-  <button type="button" (click)= "isDisable = !isDisable"> {{isDisable ? 'Habilitar' : 'Desabilitar'}}</button>
+  <button type="button" (click)= "isDisable = !isDisable"> {{isDisable ? 'Aberto' : 'Fechado'}}</button>
 
   `})
 export class NovoComponenteComponent  {
