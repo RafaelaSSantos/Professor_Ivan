@@ -48,12 +48,10 @@ export class TerceiroComponent{
     this.isSucessoo = !this.isSucessoo;
     console.log('Botão Clicado! ' + ++this.contador);
   }
-
-
   public isSucesso = true;
 
-   public parOuImpar: string = 'par';
-   private cont: number = 0;
+  public parOuImpar: string = 'par';
+  private cont: number = 0;
 
   public cliqueBotao() {
     console.log('BOTÃO CLICADO! ' + ++this.cont);
