@@ -3,17 +3,18 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-quarto',
   template: `
-  <div>
-    <input type="text" placeholder="Senha" (blur) = 'onBlur()' #campoInput >
-    <button type="button"  placeholder="confirma Senha" (click)="onClick(campoInput)">CLIQUE</button>
-  </div>
+  <input type="text" placeholder="Senha" #campoSenha />
+  <input type="text" placeholder="Confirmar senha"
+    #campoVerificaSenha (blur)="verificadorDeSenha(campoSenha.value, campoVerificaSenha.value)"
+  />
+  <div>{{ textoSenha }}</div>
 `,
 })
 export class QuartoComponent {
-public onBlur(): void {
-  console.log('O foco está perdido para a senha');
-}
-public onClick(campoInput: HTMLInputElement): void {
-  console.log(campoInput.value);
+public textoSenha: string = '';
+public verificadorDeSenha(senha: string, verificaSenha: string): void {
+  if (senha !== verificaSenha)
+    this.textoSenha = 'Senhas são diferentes';
+  else this.textoSenha = '';
 }
 }
