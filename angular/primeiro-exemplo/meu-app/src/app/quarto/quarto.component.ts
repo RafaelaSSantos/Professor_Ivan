@@ -10,8 +10,8 @@ import { Component } from '@angular/core';
   `,
 })
 export class QuartoComponent {
-  onBlur(): void {
-    console.log('Focus Is Lost for this Element');
+  public onBlur(): void {
+    console.log('O foco está perdido para este elemento');
 }
   public onClick(campoInput: HTMLInputElement): void {
     console.log(campoInput.value);
