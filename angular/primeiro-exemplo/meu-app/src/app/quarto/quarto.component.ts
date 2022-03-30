@@ -4,14 +4,14 @@ import { Component } from '@angular/core';
   selector: 'app-quarto',
   template: `
     <div>
-      <input type="text" placeholder="Name" (blur) = 'onBlur()' #campoInput >
+      <input type="text" placeholder="Senha" (blur) = 'onBlur()' #campoInput >
       <button type="button" (click)="onClick(campoInput)">CLIQUE</button>
     </div>
   `,
 })
 export class QuartoComponent {
   public onBlur(): void {
-    console.log('O foco está perdido para este elemento');
+    console.log('O foco está perdido para a senha');
 }
   public onClick(campoInput: HTMLInputElement): void {
     console.log(campoInput.value);
