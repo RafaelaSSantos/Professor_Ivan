@@ -7,6 +7,7 @@ import { PrimeiroComponent } from './primeiro/primeiro.component';
 import { SegundoComponent } from './segundo/segundo.component';
 import { TerceiroComponent } from './terceiro/terceiro.component';
 import { NovoComponenteComponent } from './novo-componente/novo-componente.component';
+import { QuartoComponent } from './quarto/quarto.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NovoComponenteComponent } from './novo-componente/novo-componente.compo
     PrimeiroComponent,
     SegundoComponent,
     TerceiroComponent,
-    NovoComponenteComponent
+    NovoComponenteComponent,
+    QuartoComponent
   ],
   imports: [
     BrowserModule,
