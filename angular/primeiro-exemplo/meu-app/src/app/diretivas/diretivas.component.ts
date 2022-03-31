@@ -17,10 +17,10 @@ import { OnePieceInterface } from '../onePiece.interface';
 
     <div *ngFor="let onePiece of onePieces; index as indice">
       <ul *ngIf="indice <= maxPiece">
-           <p><li class="cap"> Capitão: {{ onePiece.capitao }},</li>
-            <li class="rec" > Recompensa: B{{ onePiece.recompensa | currency}}</li>
-            <li class="fat" > Fruta: {{ onePiece.fruta }},</li>
-            <li class="suce" > Tripulação: {{ onePiece.tripulacao }}.</li></p>
+           <p><li class="cap"> Capitão: {{ onePiece.capitao | uppercase}},</li>
+            <li class="rec" > Recompensa: B{{ onePiece.recompensa | currency}},</li>
+            <li class="fat" > Fruta: {{ onePiece.fruta | titlecase}},</li>
+            <li class="suce" > Tripulação: {{ onePiece.tripulacao }} </li></p>
       </ul>
     </div>
   `,
