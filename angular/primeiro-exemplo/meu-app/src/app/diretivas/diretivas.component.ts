@@ -31,8 +31,8 @@ import { OnePieceInterface } from '../onePiece.interface';
     .suce{color: blue; font-size: 18px}
     .fat{color: green; font-size: 18px}
     .rec{color: red; font-size: 18px}
-    `]
-})
+    `]})
+
 export class DiretivasComponent {
   public maxPiece: number;
   public onePieces: OnePieceInterface[];
