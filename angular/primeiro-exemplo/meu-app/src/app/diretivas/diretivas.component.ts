@@ -18,7 +18,7 @@ import { OnePieceInterface } from '../onePiece.interface';
     <div *ngFor="let onePiece of onePieces; index as indice">
       <ul *ngIf="indice <= maxPiece">
            <p><li class="cap"> Capitão: {{ onePiece.capitao }},</li>
-            <li class="rec" > Recompensa: {{ onePiece.recompensa }},</li>
+            <li class="rec" > Recompensa: B{{ onePiece.recompensa | currency}}</li>
             <li class="fat" > Fruta: {{ onePiece.fruta }},</li>
             <li class="suce" > Tripulação: {{ onePiece.tripulacao }}.</li></p>
       </ul>
@@ -41,7 +41,7 @@ export class DiretivasComponent {
     this.onePieces = [
       {
         capitao: 'Monkey D. Luffy',
-        recompensa: 3161000100,
+        recompensa: 1500000000,
         fruta: ' Gomu Gomu no Mi',
         tripulacao: [
           ' Roronoa Zoro',
@@ -72,7 +72,7 @@ export class DiretivasComponent {
       {
         capitao: 'Shanks Ruivo',
         recompensa: 4048900000,
-        fruta: ' poder bruto',
+        fruta: ' PODER BRUTO',
         tripulacao: [' Benn', ' Lucky', ' Yasopp', ' Rockstar'],
       },
       {
